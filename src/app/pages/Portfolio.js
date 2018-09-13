@@ -5,49 +5,17 @@ import React from 'react';
 // Import context and provider
 import { MyContext } from '../../context';
 
-// Import translations
-import * as translationCZ from '../../translations/cz';
-import * as translationDE from '../../translations/de';
-import * as translationEN from '../../translations/en';
-import * as translationFR from '../../translations/fr';
-
 const Portfolio = () => {
     return (
         <div className="page page-portfolio page-static">
             <div className="container">
                 <MyContext.Consumer>
                     {(context) => (
-                        <React.Fragment>
-                            {
-                                (() => {
-                                    if (context.state.language === 'cz') {
-                                        return <div>
-                                            <h1 className="page-heading-h2">{translationCZ.portfolio.h1}</h1>
+                        <div>
+                            <h1 className="page-heading-h2">{context.state.data.portfolio.h1}</h1>
 
-                                            <h2 className="page-text">{translationCZ.portfolio.h2}</h2>
-                                        </div>
-                                    } else if (context.state.language === 'de') {
-                                        return <div>
-                                            <h1 className="page-heading-h2">{translationDE.portfolio.h1}</h1>
-
-                                            <h2 className="page-text">{translationDE.portfolio.h2}</h2>
-                                        </div>
-                                    } else if (context.state.language === 'fr') {
-                                        return <div>
-                                            <h1 className="page-heading-h2">{translationFR.portfolio.h1}</h1>
-
-                                            <h2 className="page-text">{translationFR.portfolio.h2}</h2>
-                                        </div>
-                                    } else {
-                                        return <div>
-                                            <h1 className="page-heading-h2">{translationEN.portfolio.h1}</h1>
-
-                                            <h2 className="page-text">{translationEN.portfolio.h2}</h2>
-                                        </div>
-                                    }
-                                })()
-                            }
-                        </React.Fragment>
+                            <h2 className="page-text">{context.state.data.portfolio.h2}</h2>
+                        </div>
                     )}
                 </MyContext.Consumer>
 

@@ -10,3 +10,6 @@
 .link:hover {
   color: hsla(24.2, 95.3%, 58.6%, 1);
 }
+.link-active {
+  color: hsla(24.2, 95.3%, 58.6%, 1);
+}
