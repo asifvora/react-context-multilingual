@@ -1,0 +1,23 @@
+{
+    "name": "react-context-multilingual",
+    "version": "1.0.1",
+    "private": true,
+    "license": "MIT",
+    "homepage": "https://github.com/asifvora/react-context-multilingual",
+    "author": {
+        "name": "Asif Vora",
+        "url": "https://github.com/asifvora/react-context-multilingual"
+    },
+    "dependencies": {
+        "react": "^16.5.0",
+        "react-dom": "^16.5.0",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.1.5"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
+}
