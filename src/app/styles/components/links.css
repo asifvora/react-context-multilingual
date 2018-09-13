@@ -1,0 +1,12 @@
+/* src/app/styles/components/links.css */
+
+.link {
+  text-decoration: none;
+  color: hsla(0, 100%, 3%, 1);
+  cursor: pointer;
+  transition: color .25s ease-in-out;
+}
+
+.link:hover {
+  color: hsla(24.2, 95.3%, 58.6%, 1);
+}

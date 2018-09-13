@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "about": "À propos de moi",
+        "home": "Accueil",
+        "portfolio": "Mon portfolio"
+    },
+    "about": {
+        "h1": "Bonjour, je m'appelle Asif Vora.",
+        "p": "Je suis développeur web en Inde. Je suis spécialisé dans la pile JavaScript (React, React Native, Redux) et sur la pile PHP (Core, Cake)."
+    },
+    "home": {
+        "h1": "Hé, je suis Asif.",
+        "h2": "Je suis un développeur web."
+    },
+    "portfolio": {
+        "h1": "Voici les exemples les plus récents de mon travail.",
+        "h2": "Si vous voulez en voir plus, contactez-moi par mail ou sur les liens des médias sociaux à propos de la page."
+    }
+}

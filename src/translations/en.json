@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "about": "About me",
+        "home": "Home",
+        "portfolio": "My portfolio"
+    },
+    "about": {
+        "h1": "Hello, my name is Asif Vora.",
+        "p": "I'm a web developer from India. I’m specialized on JavaScript stack (React, React Native, Redux) and on PHP stack (Core, Cake)."
+    },
+    "home": {
+        "h1": "Hey, I'm Asif.",
+        "h2": "I am a web developer."
+    },
+    "portfolio": {
+        "h1": "Here are the most recent examples of my work.",
+        "h2": "If you want to see more, please contact me by mail or on social media links on about page."
+    }
+}

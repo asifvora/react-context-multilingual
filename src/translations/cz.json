@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "about": "Moje portfolio",
+        "home": "Domov",
+        "portfolio": "Mé portfolio"
+    },
+    "about": {
+        "h1": "Dobrý den, jmenuji se Asif Vora.",
+        "p": "Jsem webový vývojář z Indie. Specializuji se na JavaScript stack (Reagovat, Reagovat nativní, Redux) a na PHP stack (Core, Cake)."
+    },
+    "home": {
+        "h1": "Hej, jsem Asif.",
+        "h2": "Jsem webový vývojář."
+    },
+    "portfolio": {
+        "h1": "Zde jsou nejnovější příklady mé práce.",
+        "h2": "Chcete-li se dozvědět více, prosím kontaktujte mne poštou nebo na sociálních médiích odkazy na stránce."
+    }
+}

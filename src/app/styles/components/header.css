@@ -1,0 +1,145 @@
+/* src/app/styles/components/header.css */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.nav-is-open {
+  overflow: hidden;
+}
+
+.nav-is-open header {
+  position: static;
+}
+
+/* Styles for navigation */
+nav,
+.nav,
+.nav-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+nav,
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  background-color: hsla(218.4, 24.3%, 20.2%, 1);
+}
+
+.nav-list li {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li + li {
+  margin-top: 8px;
+}
+
+.nav-toggler span,
+.nav-link {
+  transition: all .25s ease-in-out;
+}
+
+/* Button for mobile menu */
+.nav-toggler {
+  position: fixed;
+  top: 22px;
+  right: 16px;
+  z-index: 9999999;
+  padding: 0;
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav-toggler:focus {
+  outline: 0;
+}
+
+.nav-toggler span {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: hsla(0, 100%, 5%, 1);
+}
+
+.nav-toggler:hover span,
+.nav-is-open .nav-toggler:hover span {
+  background-color: hsla(24.2, 95.3%, 58.6%, 1);
+}
+
+.nav-is-open .nav-toggler span {
+  background-color: hsla(0, 100%, 100%, 1);
+}
+
+.nav-toggler span:first-of-type {
+  top: 0;
+}
+
+.nav-toggler span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-toggler span:last-of-type {
+  bottom: 0;
+}
+
+.nav-toggler--open span:first-of-type {
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%) translateX(-1%);
+}
+
+.nav-toggler--open span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.nav-toggler--open span:last-of-type {
+  top: 50%;
+  transform: rotate(-45deg) translateY(-50%) translateX(1%);
+}
+
+nav .link {
+  font-size: 32px;
+  color: hsla(0, 100%, 100%, 1);
+}
+
+/* Links for languages */
+.nav .nav-languages {
+  margin-top: 16px;
+}
+
+.nav-languages .link,
+.nav-divider {
+  font-size: 18px;
+}
+
+.nav-divider {
+  margin-right: 8px;
+  margin-left: 8px;
+  color: hsla(0, 100%, 100%, 1);
+  cursor: default;
+}
